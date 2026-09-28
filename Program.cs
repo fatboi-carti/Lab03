@@ -35,3 +35,7 @@ int restored2 = BitConverter.ToInt32(bytes2, 0);
 System.Console.WriteLine($"Исходное число {number2}");
 System.Console.WriteLine($"Восстановленное: {restored2}");
 System.Console.WriteLine($"Байты: {BitConverter.ToString(bytes2)}");
+
+byte[] data = { 0x41, 0x42, 0x43 };
+System.Console.WriteLine($"Байты: {BitConverter.ToString(data)}");
+System.Console.WriteLine($"Как текст UTF-8: {Encoding.UTF8.GetString(data)}");
